@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    color: #ededed;
+}
+.container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-auto-rows:minmax(50px,auto);
+    grid-auto-columns:minmax(50px,auto);
+    width:100%;
+    height:1100px;
+    /* background-color: #052f5c; */
+    background-image: linear-gradient(to right,red,rgb(40, 39, 39));
+}
+.box1{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+.navbar{
+    display:inline-block;
+    margin-left:140px;
+}
+.navbar div{
+    /* list-style-type: none; */
+    display:inline-block;
+    text-decoration:none;
+     margin-left:30px;
+     color:white;
+     padding:10px;
+     margin-top:20px;
+ }
+ .navbar div:hover{
+    color:black;
+}
+.navbar div ul{
+    display:none;
+    position:absolute;
+    color:white;
+    padding:10px;
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    /* margin-left:70px; */
+    font-size:34px;
+}
+.navbar div:hover ul{
+    display:block;
+}
+.navbar div ul li{
+    padding:10px;
+    color:white;
+}
+.navbar div ul li a:hover{
+    /* color:orange; */
+    display: block;
+ } 
+ #a1{
+    font-size: 32px;
+    font-weight: 200;
+}
+#a1:hover{
+    background-color:white;
+    border-radius:15px;
+    color:red;
+}
+#a2{
+    text-decoration: none;
+    color:white;
+    font-size: 32px;
+    font-weight: 200;
+}
+#a2:hover{
+    background-color:white;
+    border-radius:15px;
+    color:red;
+}
+#a3{
+    font-size: 32px;
+    font-weight: 200;
+}
+#a3:hover{
+    background-color:white;
+    border-radius:15px;
+    color:red;
+}
+#a4{
+    font-size: 32px;
+    font-weight: 200;
+}
+#a4:hover{
+    background-color:white;
+    border-radius:15px;
+    color:red;
+}
+#b1{
+    margin-top:15px;
+    margin-left:20px;
+    font-size:36px;
+    /* color:rgb(86, 201, 223); */
+    color:black;
+    /* rgb(0, 195, 255); */
+ }
+ #b2{
+    display:inline-block;
+    font-size:36px;
+    color:white;
+ }
+ .box2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:3;
+    grid-row-end:11;
+    width:900px;
+    height:600px;
+}
+.box-container{
+    display:grid;
+    grid-template-columns:1fr ;
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:10;
+    /* width:2000px;
+    height:800px; */
+}
+/* .box3{
+    display:grid;
+    grid-template-columns:1fr ;
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start:3;
+    grid-row-end:11;
+    width:900px;
+    height:450px;
+    background-color: white;;
+} */
+.box3{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start:3;
+    grid-row-end:11;
+    width:750px;
+    height:600px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left:-20px;
+}
+ #ho{
+    width:180px;
+    height:180px;
+    background-image: url("/myimage/muskan.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 180px;
+    border:10px solid rgb(205, 17, 17);
+    margin-top:30px;
+    margin-left:40px;
+ }
+ #he{
+    margin-top:-40px;
+    color:red;
+    font-size: 34px;
+    margin-left:40px;
+ }
+#d12{
+    /* margin-top:-100px; */
+    margin-left:80px;
+    margin-right:80px;
+    background-color: white;
+    border-radius: 20px;
+}
+#h1{
+    color:red;
+    font-size: 42px;
+    margin-top:40px;
+    margin-left:40px;
+    font-family:Arial, Helvetica, sans-serif;
+        /* linear-gradient(to right,red,rgb(40, 39, 39)); */
+}
+#h2{
+    color:red;
+    font-size: 42px;
+    margin-top:40px;
+    margin-left:-140px;
+    /* linear-gradient(to right,red,rgb(40, 39, 39)); */
+}
+#p1{
+    color:red;
+    font-size: 22px;
+    margin-top:-60px;
+    margin-left:40px;
+    margin-right:40px;
+}
