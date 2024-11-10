@@ -1,0 +1,265 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    color:black;
+}
+.container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-auto-rows:minmax(50px,auto);
+    grid-auto-columns:minmax(50px,auto);
+    width:2050px;
+    height:2153px;
+    /* background-image: linear-gradient(to right,red,rgb(40, 39, 39)); */
+    background-color: black;
+}
+.box{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+#d111{
+    display: grid;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+#d11{
+    /* display: grid; */
+    grid-column-start:2;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+.head{
+    display:inline-block;
+    color:white;
+    font-size: 36px;
+    margin-left:40px;
+    margin-top:35px;
+}
+.navbar{
+    color:white;
+    font-size: 22px;
+    display:inline-block;
+    margin-left:250px;
+}
+
+.navbar div{
+    /* list-style-type: none; */
+    display:inline-block;
+    text-decoration:none;
+     margin-left:30px;
+     color:white;
+     padding:10px;
+     margin-top:35px;
+ }
+ .navbar div:hover{
+    color:black;
+}
+.navbar div ul{
+    display:none;
+    position:absolute;
+    color:white;
+    padding:20px;
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    /* margin-left:70px; */
+    font-size:34px;
+}
+.navbar div:hover ul{
+    display:block;
+}
+.navbar div ul li{
+    padding:20px;
+    color:white;
+}
+.navbar div ul li a:hover{
+    /* color:orange; */
+    display: block;
+ } 
+.boxa{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:2;
+    grid-row-end:5;
+}
+.boxb{
+    display:grid;
+    grid-template-columns:1fr ;
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:4;
+    grid-row-end:5;
+}
+.box2{
+   
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:5;
+    margin-top:-120px;
+}
+.box3{
+    
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start:2;
+    grid-row-end:5;
+}
+#d33{
+    margin-top:-250px;
+    margin-right:-200px ;
+}
+#h1{
+    font-size: 40px;
+    color:white;
+    padding-top:40px;
+    margin-left:140px;
+    font-family:"Inknut Antiqua";
+}
+#h2{
+    font-size: 80px;
+    color:rgb(251, 6, 6);
+    /* font-style: ; */
+    -webkit-text-stroke: 1px white;
+    margin-left:140px;
+    margin-top:80px;
+    font-family:"Inknut Antiqua";
+}
+#h3{
+    font-size: 40px;
+    color:white;
+    padding-top:20px;
+    margin-left:140px;
+    font-family:"Inknut Antiqua";
+}
+#h4{
+    font-size: 40px;
+    color:white;
+    padding-top:20px;
+    margin-left:140px;
+    font-family:"Inknut Antiqua";
+}
+.box31-container{
+    width:300px;
+    height:300px;
+    background-color:white;
+    border-radius: 200px;
+    margin-right: 400px;
+    margin-top:420px;
+}
+.box32-container{
+    width:300px;
+    height:300px;
+    background-color:#fa1111;
+    border-radius: 200px;
+    margin-left: -163px;
+    margin-top:-450px;
+}
+/* .box33-container{
+    width:350px;
+    height:500px;
+    border-radius: 180px;
+    background-image: url("/myimage/muskan-Photoroom.png");
+    /* background-size:cover;
+    background-repeat: no-repeat;
+   
+    border:20px solid white;
+    margin-top:-280px;
+    margin-left:-100px; 
+} */
+.box33-container{
+    width:380px;
+    height:380px;
+    /* background-image: url("/myimage/muskan-Photoroom.png"); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 180px;
+    /* border:2px solid black; */
+    margin-top:-220px;
+    margin-left:-60px;
+}
+.btn{
+    width:240px;
+    height:60px;
+    background-color: #fa1111;
+    margin-top:-360px;
+    margin-left:200px;
+    border-radius: 15px;
+    transform: rotate(-5deg);
+    /* border-bottom-left-radius: ; */
+}
+.boxc{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:4;
+    grid-row-end:7;
+}
+.box8{
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:4;
+    grid-row-end:7;
+    margin-top:800px;
+}
+.box9{
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start:4;
+    grid-row-end:7;
+    color:white;
+    margin-left:-1000px ;
+    margin-top:-100px;
+}
+#b1{
+    font-size: 40px;
+    color:white;
+    padding-top:40px;
+    margin-left:-140px;
+    font-family:"Inknut Antiqua";
+}
+#b2{
+    font-size: 80px;
+    color:rgb(251, 6, 6);
+    /* font-style: ; */
+    -webkit-text-stroke: 1px white;
+    margin-left:-140px;
+    margin-top:80px;
+    font-family:"Inknut Antiqua";
+}
+#b3{
+    font-size: 40px;
+    color:white;
+    padding-top:20px;
+    margin-left:-140px;
+    font-family:"Inknut Antiqua";
+}
+#b4{
+    font-size: 40px;
+    color:white;
+    padding-top:20px;
+    margin-left:-140px;
+    font-family:"Inknut Antiqua";
+}
+.box81-container{
+    width:350px; 
+    height:350px;
+    background-color: black;
+    margin-top:400px;
+    margin-left:200px;
+    border-radius :180px;
+    border:15px solid red;
+}
