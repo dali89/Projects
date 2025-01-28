@@ -14,7 +14,7 @@ class Sign extends  StatelessWidget {
           Container(
           width:double.infinity,height:double.infinity,
           decoration:BoxDecoration(
-           gradient:LinearGradient(colors: [Color(0xff881736),
+           gradient:LinearGradient(colors: [Color.fromARGB(217, 136, 5, 250),
            Color(0xff281537)]),
 
         ),
@@ -35,7 +35,7 @@ class Sign extends  StatelessWidget {
             child:Center(child: InkWell(onTap:(){
                 //  Navigator.push(context, MaterialPageRoute(builder:(context)=>Login()));
             },child:Text('Sign in',style:TextStyle(
-              fontSize: 26, color: Color(0xff881736),fontWeight: FontWeight.bold,
+              fontSize: 26, color: Color.fromARGB(217, 136, 5, 250),fontWeight: FontWeight.bold,
              
              ), 
              ))),
@@ -55,7 +55,7 @@ class Sign extends  StatelessWidget {
             },child:
             Text('Sign Up',style:TextStyle(
                   
-              fontSize: 26, color: Color(0xff881736),fontWeight: FontWeight.bold,
+              fontSize: 26, color: Color.fromARGB(217, 136, 5, 250),fontWeight: FontWeight.bold,
               
             )
        
