@@ -7,10 +7,11 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:Column(
+      body:SingleChildScrollView(child:
+      Column(
           children: [
             Transform.rotate(angle: 12.5,
-             child:Transform.translate(offset: Offset(0, -83),
+             child:Transform.translate(offset: Offset(-20, -123),
         child:Container(
           // margin:EdgeInsets.only(left: -120) ,
           width:400,height:300,
@@ -26,90 +27,130 @@ class Home extends StatelessWidget {
        // PageView(children: [
            ),),
             Padding(padding: EdgeInsets.only(left:10,right:50),
-            child:Transform.translate(offset: Offset(0, -80),
+            child:Transform.translate(offset: Offset(0, -130),
         child:Container(width:350,height:310,
+        padding: EdgeInsets.only(top:0),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(20), ),
               // color:Colors.purple,
                image:DecorationImage(image: AssetImage("assets/image2.png"))
               ),
-              child:Column(
+              child:
+              Column(
                 children: [
-                   Padding(padding: EdgeInsets.only(right:150),
+                   Padding(padding: EdgeInsets.only(right:200,top: 70),
                   
                   child:Container(
                     width:100,height:40,
                     decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color:Colors.white,),
+              padding: EdgeInsets.only(left:20,top:0.9),
                     child:Text("Limited Now"),),),
-                     Padding(padding: EdgeInsets.only(left:140,top:120),
+                     Padding(padding: EdgeInsets.only(left:200,top:95),
                      child:Container(
                     width:100,height:30,
                     decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20 ),
               color:Colors.white,),
+               padding: EdgeInsets.only(left:30,top:2.5),
                     child:Text("Show"),),),
                 ],
           
               )
               ),),),
-//  Container(width:280,height:210,
-//           decoration: BoxDecoration(
-//               borderRadius: BorderRadius.all(Radius.circular(20), ),
-//               color:Colors.purple,),
-//               child:Column(
-//                 children: [
-//                    Padding(padding: EdgeInsets.only(right:150,top:10),
-//                   child:Container(
-//                     width:100,height:40,
-//                     decoration: BoxDecoration(
-//               borderRadius: BorderRadius.circular(20),
-//               color:Colors.white,),
-//                     child:Text("Limited Now"),),),
-//                      Padding(padding: EdgeInsets.only(left:140,top:120),
-//                      child:Container(
-//                     width:100,height:30,
-//                     decoration: BoxDecoration(
-//               borderRadius: BorderRadius.circular(20 ),
-//               color:Colors.white,),
-//                     child:Text("Show"),),),
-//                 ],
-          
-//               )
-//               ),
-//                Container(width:280,height:210,
-//           decoration: BoxDecoration(
-//               borderRadius: BorderRadius.all(Radius.circular(20), ),
-//               color:Colors.purple,),
-//               child:Column(
-//                 children: [
-//                    Padding(padding: EdgeInsets.only(right:150,top:10),
-//                   child:Container(
-//                     width:100,height:40,
-//                     decoration: BoxDecoration(
-//               borderRadius: BorderRadius.circular(20),
-//               color:Colors.white,),
-//                     child:Text("Limited Now"),),),
-//                      Padding(padding: EdgeInsets.only(left:140,top:120),
-//                      child:Container(
-//                     width:100,height:30,
-//                     decoration: BoxDecoration(
-//               borderRadius: BorderRadius.circular(20 ),
-//               color:Colors.white,),
-//                     child:Text("Show"),),),
-//                 ],
-          
-//               )
-//               ),
-       // ],),
+
         Padding(padding: EdgeInsets.only(right:170),
-       child: Transform.translate(offset: Offset(-40, -20), child:Text("Category",style:TextStyle(fontSize: 28,color: const Color.fromARGB(255, 87, 29, 220),fontWeight: FontWeight.bold,)),
+       child: Transform.translate(offset: Offset(-40, -190), child:Text("Category",style:TextStyle(fontSize: 28,color: const Color.fromARGB(255, 87, 29, 220),fontWeight: FontWeight.bold,)),
        // PageView(children: [
            ),),
-        
-        
-      ],
-      ),);
+           Row(
+            // Center alignment
+            children: [
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: CircleBorder(),
+                  padding: EdgeInsets.all(20),
+                backgroundColor: Colors.blue, // Button color
+                ),
+                onPressed: () {
+                  print("Button 1 Pressed");
+                },
+                child: Icon(
+                  Icons.add,
+                  size: 30,
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(width: 10), // Gap between buttons
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: CircleBorder(),
+                  padding: EdgeInsets.all(20),
+                  backgroundColor: Colors.green, // Button color
+                ),
+                onPressed: () {
+                  print("Button 2 Pressed");
+                },
+                child: Icon(
+                  Icons.star,
+                  size: 30,
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(width: 10),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: CircleBorder(),
+                  padding: EdgeInsets.all(20),
+                  backgroundColor: Colors.red, // Button color
+                ),
+                onPressed: () {
+                  print("Button 3 Pressed");
+                },
+                child: Icon(
+                  Icons.favorite,
+                  size: 30,
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(width: 10),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: CircleBorder(),
+                  padding: EdgeInsets.all(20),
+                  backgroundColor: Colors.orange, // Button color
+                ),
+                onPressed: () {
+                  print("Button 4 Pressed");
+                },
+                child: Icon(
+                  Icons.access_alarm,
+                  size: 30,
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(width: 10),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: CircleBorder(),
+                  padding: EdgeInsets.all(20),
+                  backgroundColor: Colors.purple, // Button color
+                ),
+                onPressed: () {
+                  print("Button 5 Pressed");
+                },
+                child: Icon(
+                  Icons.home,
+                  size: 30,
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+           ],
+     ),
+      ),
+      );
       
     }}

@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ededed;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    grid-auto-columns: minmax(50px, auto);
+    width: 100%;
+    height: 1420px;
+    background-image: linear-gradient(to right, red, rgb(40, 39, 39));
+}
+
+.box {
+    /* background-color: #5aacc5; */
+}
+
+.box-1-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#d1 {
+    width: 100%;
+    height: 50px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.boxa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 15;
+    margin-top: 50px;
+}
+
+.box2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 15;
+    padding-left: 170px;
+}
+
+.box4-container {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 15;
+}
+
+.box5-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 15;
+    grid-row-end: 16;
+    margin-top: -70px;
+}
+
+#d5 {
+    font-size: 42px;
+    margin-left: 50px;
+    color: white;
+}
+
+.box6-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 16;
+    grid-row-end: 21;
+    margin-top: -250px;
+}
+
+.box7 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 21;
+    grid-row-end: 22;
+}
+
+#d61, #d62, #d63 {
+    width: 450px;
+    height: 350px;
+    background-image: url("/myimage/a2.jpg");
+    border-radius: 180px;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+#d61:hover, #d62:hover, #d63:hover {
+    width: 500px;
+    height: 500px;
+    border: 2px solid white;
+    margin-left: 120px;
+    margin-top: -20px;
+}
+
+.navbar {
+    display: inline-block;
+    margin-left: 140px;
+}
+
+.navbar div {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.navbar div:hover {
+    color: black;
+}
+
+div a {
+    text-decoration: none;
+    color: white;
+}
+
+#h1 {
+    font-size: 50px;
+}
+
+#h2 {
+    font-size: 80px;
+}
+
+#skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills-list li {
+    font-size: 32px;
+    margin: 10px 0;
+}

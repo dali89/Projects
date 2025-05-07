@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_project/home.dart';
 import 'package:flutter_project/login.dart';
 import 'package:flutter_project/registration.dart';
+import 'package:flutter_project/s2.dart';
+import 'package:flutter_project/s3.dart';
 import 'package:flutter_project/shoe.dart';
-import 'package:flutter_project/sign.dart';
+import 'package:flutter_project/shirt.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  Home(),
+      home:  S3(),
     );
   }
 }

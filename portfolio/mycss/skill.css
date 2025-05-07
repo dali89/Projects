@@ -15,29 +15,35 @@ body{
     font-weight: 400;
     color:rgba(200, 17, 17, 0.747);
 }
-.wrap{
-    margin-top:-180px;
-    margin-left:10px;
-    color:white;
+.wrap {
+    margin-top: 20px; /* Adjusted for better spacing */
+    margin-left: 10px;
+    color: white;
     font-size: 20px;
 }
-.pbox{
-    width:700px;
-    height:70px;
-    color:rgb(255, 0, 38);
-    margin-left:20px;
+.pbox {
+    width: 700px;
+    height: 70px;
+    color: rgb(255, 0, 38);
+    margin-left: 20px;
     border-radius: 5px;
-    background:white;
-    box-shadow: 0 0 10px 1px rgb(200, 129, 129);
-}
-.outline{
-    width:516px;
-    height:34px;
-    border-radius:30px;
     background: white;
-    padding:0.8px;
+    /* box-shadow: 0 0 10px 1px rgb(200, 129, 129); */
+}
+.outline {
+    width: 90%; /* Full width */
+    height: 34px;
+    border-radius: 30px;
+    border:0px;
+    background: white;
+    padding: 0.8px;
     box-shadow: inset 4px 4px 6px;
-    margin-left:20px;
+    margin-left: 20px;
+}
+.inline {
+    height: 100%; /* Full height */
+    background-color: rgb(255, 0, 38); /* Progress color */
+    border-radius: 30px; /* Rounded corners */
 }
 .title{
     margin-top:8px;
